@@ -1,7 +1,5 @@
 package datastuctures;
 
-import java.util.*;
-
 /*
  * Fast but size must be declared
  * 

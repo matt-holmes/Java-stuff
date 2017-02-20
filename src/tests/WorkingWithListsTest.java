@@ -22,47 +22,44 @@ public class WorkingWithListsTest {
 
 	@Test
 	public void testGetResultStandardForLoop() {
-		assertEquals(this.workingWithLists.getResultStandardForLoop(), 
-				" item 1 item 2 item 3 item 4 item 5");
+		assertEquals(" item 1 item 2 item 3 item 4 item 5",
+				this.workingWithLists.getResultStandardForLoop());
 	}
 	
 	@Test
 	public void testGetResultNewForLoop() {
-		assertEquals(this.workingWithLists.getResultStandardForLoop(), 
-				" item 1 item 2 item 3 item 4 item 5");
+		assertEquals(" item 1 item 2 item 3 item 4 item 5",
+				this.workingWithLists.getResultStandardForLoop());
 	}
 
 	@Test
 	public void testGetResultWithIterator() {
-		assertEquals(this.workingWithLists.getResultWithIterator(), 
-				" item 1 item 2 item 3 item 4 item 5");
+		assertEquals(" item 1 item 2 item 3 item 4 item 5",
+				this.workingWithLists.getResultWithIterator());
 	}
 	
 	@Test
 	public void testGetMyListSubList() {
 		List<String> sublist = this.workingWithLists.getMyListSubList(2, 4);
-		assertEquals(sublist.get(0), "item 3");
-		assertEquals(sublist.get(1), "item 4");
+		assertEquals("item 3", sublist.get(0));
+		assertEquals("item 4", sublist.get(1));
 	}
 	
 	@Test
 	public void testGetMyListSize() {
-		assertEquals(this.workingWithLists.getMyListSize(), 
-				5);
+		assertEquals(5, this.workingWithLists.getMyListSize());
 	}
 	
 	@Test
 	public void testRemoveFromMyListByObject() {
 		this.workingWithLists.removeFromMyListByObject("item 2");
-		assertEquals(this.workingWithLists.getMyListSize(), 
-				4);
+		assertEquals(4, this.workingWithLists.getMyListSize());
 	}
 	
 	@Test
 	public void testRemoveFromMyListByIndex() {
 		this.workingWithLists.removeFromMyListByIndex(3);
-		assertEquals(this.workingWithLists.getMyListSize(), 
-				4);
+		assertEquals(4, this.workingWithLists.getMyListSize());
 	}
 
 }

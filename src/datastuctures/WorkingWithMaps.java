@@ -16,7 +16,7 @@ public class WorkingWithMaps {
 	Map<String, String> myMap;
 	
 	public WorkingWithMaps() {
-		this.myMap = new <String, String> HashMap<String, String>();
+		this.myMap = new HashMap<String, String>();
 	}
 	
 	public Map<String, String> getMyMap() {

@@ -30,7 +30,7 @@ public class WorkingWithSetsTest {
 	
 	@Test
 	public void testGetMySetSize() {
-		assertEquals(this.workingWithSets.getMySetSize(), 6);
+		assertEquals(6, this.workingWithSets.getMySetSize());
 	}
 	
 	@Test
@@ -41,11 +41,11 @@ public class WorkingWithSetsTest {
 	@Test
 	public void testRemoveFromMySet() {
 		this.workingWithSets.removeFromMySet(3);
-		assertEquals(this.workingWithSets.getMySetSize(), 5);
+		assertEquals(5, this.workingWithSets.getMySetSize());
 		this.workingWithSets.removeFromMySet(11);
-		assertEquals(this.workingWithSets.getMySetSize(), 5);
+		assertEquals(5, this.workingWithSets.getMySetSize());
 		this.workingWithSets.removeFromMySet(9);
-		assertEquals(this.workingWithSets.getMySetSize(), 4);
+		assertEquals(4, this.workingWithSets.getMySetSize());
 	}
 	
 

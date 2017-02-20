@@ -22,34 +22,28 @@ public class WorkingWithMapsTest {
 
 	@Test
 	public void testGetValuesUsingIterator() {
-		assertEquals(this.workingWithMaps.getValuesUsingIterator(), 
-				" item 1 item 2 item 3 item 4 item 5");
+		assertEquals(" item 1 item 2 item 3 item 4 item 5", 
+				this.workingWithMaps.getValuesUsingIterator());
 	}
 	
 	@Test
 	public void testGetKeysUsingIterator() {
-		assertEquals(this.workingWithMaps.getKeysUsingIterator(), 
-				" A B C D E");
+		assertEquals(" A B C D E", 
+				this.workingWithMaps.getKeysUsingIterator());
 	}
 	
 	@Test
 	public void testGetItemFromKey() {
-		assertEquals(this.workingWithMaps.getItemFromKey("A"), 
-				"item 1");
-		assertEquals(this.workingWithMaps.getItemFromKey("B"), 
-				"item 2");
-		assertEquals(this.workingWithMaps.getItemFromKey("C"), 
-				"item 3");
-		assertEquals(this.workingWithMaps.getItemFromKey("D"), 
-				"item 4");
-		assertEquals(this.workingWithMaps.getItemFromKey("E"), 
-				"item 5");
+		assertEquals("item 1", this.workingWithMaps.getItemFromKey("A"));
+		assertEquals("item 2", this.workingWithMaps.getItemFromKey("B"));
+		assertEquals("item 3", this.workingWithMaps.getItemFromKey("C"));
+		assertEquals("item 4", this.workingWithMaps.getItemFromKey("D"));
+		assertEquals("item 5", this.workingWithMaps.getItemFromKey("E"));
 	}
 	
 	@Test 
 	public void testGetMyMapSize() {
-		assertEquals(this.workingWithMaps.getMyMapSize(), 
-				5);
+		assertEquals(5, this.workingWithMaps.getMyMapSize());
 	}
 	
 	@Test 
