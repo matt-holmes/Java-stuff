@@ -3,6 +3,14 @@ package datastuctures;
 import java.util.*;
 import java.util.Map.Entry;
 
+
+/*
+ * An object that maps keys to values. 
+ * A map cannot contain duplicate keys; each key can map to at most one value.
+ * 
+ */
+
+
 public class WorkingWithMaps {
 	
 	Map<String, String> myMap;
