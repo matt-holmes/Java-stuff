@@ -6,8 +6,6 @@ import org.junit.Test;
 
 import datastuctures.WorkingWithSets;
 
-import java.util.*;
-
 
 public class WorkingWithSetsTest {
 
