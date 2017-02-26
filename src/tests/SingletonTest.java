@@ -3,10 +3,9 @@ package tests;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
-
-import designpatterns.Singleton;
-
 import org.junit.Test;
+
+import designpatterns.singleton.Singleton;
 
 public class SingletonTest {
 	
