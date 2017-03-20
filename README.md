@@ -10,13 +10,13 @@
 
 ---
 
-## Data Structures:
+### Data Structures:
 * Map (HashMap)
 * List (ArrayList)
 * Set (TreeSet)
 * Array
 
-## Design Patterns:
+### Design Patterns:
 * Singleton
 * Decorator
 * Strategy
