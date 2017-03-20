@@ -8,9 +8,9 @@ import designpatterns.factory.Factory;
 import designpatterns.factory.Footwear;
 
 public class FactoryTest {
-	
+
 	private Factory myFactory;
-	
+
 	@Before
 	public void setup() {
 		this.myFactory = new Factory();
