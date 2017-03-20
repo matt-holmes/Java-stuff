@@ -1,6 +1,6 @@
 # Java-stuff
 
-## Setup:
+### Setup:
 1. Setup the Spring Vagrant Kit - https://github.com/matt-holmes/spring-vagrant
 2. vagrant ssh
 3. cd /vagrant
