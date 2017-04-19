@@ -5,7 +5,7 @@ import designpatterns.decorator.*;
 
 import org.junit.Test;
 
-public class IcecreamDecoratorTest {
+public class DecoratorTest {
 
 	@Test
 	public void test() {
