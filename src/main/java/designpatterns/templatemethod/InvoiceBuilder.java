@@ -22,13 +22,12 @@ abstract public class InvoiceBuilder {
     }
 
     //Template method
-    public double calcTotal(HashMap<String, Double> items) {
+    public void calcTotal(HashMap<String, Double> items) {
         total = 0.0;
         this.items = items;
         calcTotalServices();
         applySurcharge();
         applyDiscounts();
-        return total;
     }
 
     //method will be the same for its subclass
