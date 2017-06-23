@@ -28,6 +28,7 @@ public class UsingStreams {
         public int getAge() {
             return age;
         }
+
     }
 
     private List<People> myList;
@@ -55,5 +56,27 @@ public class UsingStreams {
 			.stream()
 			.filter(p -> p.getAge() > 18)
 			.collect(Collectors.toList());
+    }
+
+    public List<String> namesToUpperCase() {
+        return this.getMyList()
+            .stream()
+            .map(p -> p.getName())
+            .map(n -> n.toUpperCase())
+            .collect(Collectors.toList());
+    }
+
+    public int getSumOfAges() {
+        return this.getMyList()
+            .stream()
+            .reduce(0, (sum, p) -> sum += p.getAge(), (sum1, sum2) -> sum1 + sum2);
+    }
+
+    public List<String> getSortedByName() {
+        return this.getMyList()
+            .stream()
+            .sorted((p1, p2) -> p1.getName().compareTo(p2.getName()))
+            .map(p -> p.getName())
+            .collect(Collectors.toList());
     }
 }
